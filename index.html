@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form action="">
+                <h1>Sign in</h1>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back</h1>
+                    <p>Enter your personal details to use all features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+<script>
+    // let textBtn = document.querySelector('#btn');
+    // let pText = document.querySelector('.text');
+
+    // textBtn.addEventListener('click', () =>{
+    //     pText.style.fontSize = '23px';
+    //     pText.style.color = 'red';
+    // })
+    document.querySelector('#btn').onclick = function(){
+        document.querySelector('.text').style.color = 'red';
+        document.querySelector('.text').style.fontSize = '24px';
+        
+    } 
+    document.querySelector('#closeBtn').onclick = function(){
+        document.querySelector('.text').style.color = 'blue';
+        document.querySelector('.text').style.fontSize = '16px';
+        
+    } 
+    function createMyLoginForms() {
+        // Create our form element
+
+        
+        // Create our text input field
+
+        // Create our password input field
+
+        // Add it to the <main> section of our webpage
+    }
+</script>
+
+<script src="/main.js"></script>
+</body>
+</html>
